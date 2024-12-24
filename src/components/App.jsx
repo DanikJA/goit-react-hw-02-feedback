@@ -35,11 +35,17 @@ export class App extends Component {
         <button onClick={() => this.handleUpdate('neutral')}>Neutral</button>
         <button onClick={() => this.handleUpdate('bad')}>Bad</button>
         <h2>Statistics</h2>
-        <p>Good: {good}</p>
-        <p>Neutral: {neutral}</p>
-        <p>Bad: {bad}</p>
-        <p>Total:{total}</p>
-        <p>Positive:{positivePercentage}%</p>
+        {total > 0 ? (
+          <div>
+            <p>Good: {good}</p>
+            <p>Neutral: {neutral}</p>
+            <p>Bad: {bad}</p>
+            <p>Total:{total}</p>
+            <p>Positive:{positivePercentage}%</p>
+          </div>
+        ) : (
+          <p>No feedback yet</p>
+        )}
       </div>
     );
   }
