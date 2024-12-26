@@ -1,9 +1,11 @@
+import { Wrapper, Button } from './Feedback.styled';
+
 export const FeedbackOptions = ({ onLeaveFeedback }) => {
   return (
-    <>
-      <button onClick={() => onLeaveFeedback('good')}>Good</button>
-      <button onClick={() => onLeaveFeedback('neutral')}>Neutral</button>
-      <button onClick={() => onLeaveFeedback('bad')}>Bad</button>
-    </>
+    <Wrapper>
+      <Button onClick={() => onLeaveFeedback('good')}>Good</Button>
+      <Button onClick={() => onLeaveFeedback('neutral')}>Neutral</Button>
+      <Button onClick={() => onLeaveFeedback('bad')}>Bad</Button>
+    </Wrapper>
   );
 };

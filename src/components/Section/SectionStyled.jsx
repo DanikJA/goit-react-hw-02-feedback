@@ -1,16 +1,18 @@
 import styled from 'styled-components';
 
 export const StyledSection = styled.section`
-  padding: 20px;
-  background-color: #f7f9fc;
+  padding: 20px 30px;
+  background-color: #f0f0f0;
   border-radius: 10px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  margin: 20px 0;
+  margin: 20px auto;
 
   h2 {
     font-size: 24px;
-    color: #333;
-    margin-bottom: 10px;
+    color: #333333;
+    text-align: center;
+    margin-bottom: 15px;
+    font-weight: bold;
   }
 `;
 
