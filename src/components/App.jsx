@@ -3,7 +3,7 @@ import { Statistics } from './Statistics/Statistics';
 import { FeedbackOptions } from './Feedback/Feedback.Options';
 import { Section } from './Section/Section';
 import { Wrapper } from './Section/SectionStyled';
-import { Message } from './Styled.app';
+import { Notification } from './Notification/Nitification.message';
 
 export class App extends Component {
   state = {
@@ -52,7 +52,7 @@ export class App extends Component {
             />
           </Section>
         ) : (
-          <Message>No feedback yet</Message>
+          <Notification message="There is no feedback" />
         )}
       </Wrapper>
     );
