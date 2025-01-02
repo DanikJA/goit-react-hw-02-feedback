@@ -1,8 +1,4 @@
-import {
-  StatsContainer,
-  StatItem,
-  PositiveFeedback,
-} from './Statistics.styled';
+import { StatsContainer, StatItem, PositiveFeedback } from './StatisticsStyled';
 
 export const Statistics = ({
   good,
